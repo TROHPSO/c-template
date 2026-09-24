@@ -17,6 +17,6 @@ IF /I "%~1" == "build" ( %CC% .\mate.c -o .\mate.exe && .\mate )
 IF /I "%~1" == "run" ( .\mate )
 IF /I "%~1" == "remove-git" (
     %PWSH% -NoProfile -ExecutionPolicy Bypass -Command ^
-    "attrib -H -S -R '.git' /S /D; Remove-Item -LitteralPath '.git' -Recurse -Force"
+    "attrib -H -S -R '.git' /S /D; Remove-Item -LiteralPath '.git' -Recurse -Force"
     exit /B
 )
