@@ -4,6 +4,8 @@
 - Basé sur mate.h comme système de compilation alternative à CMake, Meson.. 
 - Ecrit 100% en C.
 - Fonctionne avec Clang, GCC, TCC (TCC ne marche sous windows pour moi).
+- Supporte les structure en Glob (unitybuild / jumbobuild)
+- Permet d'écrire des instruction de compilation spécifique selon la plateforme
 
 ## Comment utiliser
 1. Sélectionner son compilateur dans [./mate.bat](./mate.bat) a l'emplacement de la variable "CC=ici"
@@ -32,8 +34,13 @@ Si vous n'avez pas de Toolchain pour programmer en C
 ```bat
 .\mate.bat run
 ```
-- Compilation incrémentale : Détecte automatiquement les changements dans la structure et compile seulement les changements pour ne pas tout recompiler.
+- Compilation incrémentale : Détecte automatiquement les changements dans la structure et compile seulement les changements pour ne pas tout recompiler et donc de perdre du temps et des ressources.
 
-
+### Supprimer le repo git
+`del /F /Q .\.git\`
 ## Compilation avancée pour bibliothèque externe
 - [voir les examples](https://github.com/TomasBorquez/mate.h/tree/master/examples)  
+
+### Ressources que je recommande
+https://youtu.be/5GgtSkTFXSI
+https://github.com/TomasBorquez/mate.h/
