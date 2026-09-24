@@ -10,7 +10,7 @@
 2. [Configurer son environnement](#configuration-environnement)
 
 Si vous n'avez pas de Toolchain pour programmer en C 
-- Sous Windows : Y Remedie en une simple ligne à partir de son terminal 
+- Sous Windows : Vous pouvez y remedié simplement en ligne une ligne dans son terminal. 
     - `winget install LLVM.LLVM Microsoft.VisualStudio.BuildTools`. 
     - Ensuite installer les bibliothèques standard C dans Visual Studio Installer.
 
