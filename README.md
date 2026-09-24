@@ -1,13 +1,15 @@
 ## Description
+Mate.h présent dans ce repository reste un projet expérimentale plein d'erreur peuvent survenir à tout moment
+
 - Simple
 - Système de compilation non chronophage.
 - Basé sur mate.h comme système de compilation alternative à CMake, Meson ou make. 
 - Codesource 100% en C sous license MIT.
-- Fonctionne avec Clang, GCC, TCC (TCC ne marche sous windows pour moi).
+- Fonctionne avec Clang, GCC, TCC (TCC ne marche pas sous windows pour moi).
 - Intégration facile avec des structures en Glob (unitybuild / jumbobuild)
 - Déclaration d'instruction de compilation spécifique selon la plateforme.
-- Compilation en parallele (sur plusieurs coeurs du CPU), plutôt qu'en concurrentiel.
-- Compilation incrémentale (recompile que les fichiers modifiés)
+- Compilation en parallèle (distributions des taches sur plusieurs cœurs du CPU), plutôt qu'en concurrentiel.
+- Compilation incrémentale (recompile que les fichiers modifiés pour une optimisation des ressources).
 
 ## Comment utiliser
 1. Sélectionner son compilateur dans [./mate.bat](./mate.bat) a l'emplacement de la variable "CC=ici"
