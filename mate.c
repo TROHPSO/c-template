@@ -7,7 +7,9 @@ int main() {
         Executable executable = CreateExecutable((ExecutableOptions){
             .output = "main",
             .warnings = FLAG_WARNINGS,
-            .flags = "-Wall -g",
+            .debug = FLAG_DEBUG,
+            .optimization = FLAG_OPTIMIZATION
+            // .flags = "-Wall -g",
         });
 
         AddFile(executable, "./src/main.c");
